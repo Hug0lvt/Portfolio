@@ -15,7 +15,7 @@ const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () { elementToggleFunc(sidebar); });
 
 
-
+/*
 // testimonials variables
 const testimonialsItem = document.querySelectorAll("[data-testimonials-item]");
 const modalContainer = document.querySelector("[data-modal-container]");
@@ -53,7 +53,7 @@ for (let i = 0; i < testimonialsItem.length; i++) {
 modalCloseBtn.addEventListener("click", testimonialsModalFunc);
 overlay.addEventListener("click", testimonialsModalFunc);
 
-
+*/
 
 // custom select variables
 const select = document.querySelector("[data-select]");
@@ -157,3 +157,43 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+
+
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const projectItems = document.querySelectorAll(".project-item");
+  const modalContainers = document.querySelectorAll(".modal-container");
+
+  projectItems.forEach(item => {
+    item.addEventListener("click", function () {
+      const modalId = this.getAttribute("data-modal");
+      const modalToShow = document.querySelector(`.modal-container[data-modal='${modalId}']`);
+
+      if (modalToShow) {
+        modalToShow.classList.add("active");
+      }
+    });
+  });
+
+  modalContainers.forEach(modal => {
+    const closeButton = modal.querySelector("[data-modal-close-btn]");
+    const overlay = modal.querySelector("[data-overlay]");
+
+    function closeModal() {
+      modal.classList.remove("active");
+    }
+
+    if (closeButton) {
+      closeButton.addEventListener("click", closeModal);
+    }
+
+    if (overlay) {
+      overlay.addEventListener("click", closeModal);
+    }
+  });
+});
