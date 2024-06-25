@@ -974,9 +974,9 @@ main {
 .select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
 
 .project-list {
-  display: grid;
+  /*display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+  gap: 30px;*/
   margin-bottom: 10px;
 }
 
@@ -985,6 +985,8 @@ main {
 .project-item.active {
   display: block;
   animation: scaleUp 0.25s ease forwards;
+  padding-top: 15px;
+  padding-bottom: 30px;
 }
 
 @keyframes scaleUp {
