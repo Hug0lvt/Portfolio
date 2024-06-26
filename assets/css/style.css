@@ -4,7 +4,7 @@
 
 
 /**
- * copyright 2022 @codewithsadee
+ * copyright 2022 @codewithsadee et @hugolvt pour le thème
  */
 
 
@@ -210,6 +210,18 @@ body { background: var(--smoky-black); }
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
+
+.action-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.detail-github-link {
+  text-align: center;
+  font-size: 11px;
+  margin-left: 2px;
+}
 
 .sidebar,
 article {
