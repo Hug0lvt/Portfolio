@@ -141,10 +141,6 @@
 
     </aside>
 
-
-
-
-
     <!--
       - #main-content
     -->
@@ -175,10 +171,6 @@
         </ul>
 
       </nav>
-
-
-
-
 
       <!--
         - #ABOUT
@@ -441,6 +433,10 @@
             </li>
 
             <li class="filter-item">
+              <button data-filter-btn>Web</button>
+            </li>
+
+            <li class="filter-item">
               <button data-filter-btn>Jeux</button>
             </li>
 
@@ -466,6 +462,10 @@
 
               <li class="select-item">
                 <button data-select-item>Applications</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web</button>
               </li>
 
               <li class="select-item">
@@ -620,11 +620,110 @@
                   <div data-modal-text>
                     <p>
                       Cons'Eco est une application de gestion de budget, réaliser dans le cadre d'une SAE.
-                    L'application a été réalisée en .NET MAUI afin d'être multi-plateforme.
+                      L'application a été réalisée en .NET MAUI afin d'être multi-plateforme.
                       <br><br>
                       J'ai pu découvrir .NET MAUI, de plus, il y a eu un enjeu technique, le fait de devoir récupérer des opération bancaires.
                       Nous avons fait le choix de récupérer un fichier contenant des opérations en fonction des banques. Dans un futur,
                       on aurait pu utiliser les API des banques (ce qui est très compliqué pour des raisons de sécurité).
+                    </p>
+
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <li class="project-item active" data-filter-item data-category="web" data-modal="FAKENEWS">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/projets/fakenews/logo.webp" alt="Logo de FakeNews" width="50" loading="lazy" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>FakeNews</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Le projet FakeNews a été réalisé en binôme, dans le cadre d'un cours sur l'intelligence artificielle.
+                    L'application a été réalisée en Python avec Flask afin de réaliser la page web.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+
+            <div class="modal-container" data-modal-container data-modal="FAKENEWS">
+              <div class="overlay" data-overlay></div>
+              <section class="testimonials-modal">
+                <button class="modal-close-btn" data-modal-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+                <div class="modal-img-wrapper">
+                  <figure class="modal-avatar-box">
+                    <img src="./assets/projets/fakenews/logo.webp" alt="Logo de FakeNews" width="80" data-modal-img>
+                  </figure>
+                  <br>
+                  <li class="social-item">
+                    <a href="https://github.com/Hug0lvt" class="social-link">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </li>
+                </div>
+                <div class="modal-content">
+                  <h4 class="h3 modal-title" data-modal-title>FakeNews</h4>
+                  <time datetime="2021-06-14">Projet de 3A - Semestre 5 (2023-2024)</time>
+                  <div data-modal-text>
+                    <p>
+                      Le projet FakeNews a été réalisé en binôme, dans le cadre d'un cours sur l'intelligence artificielle.
+                      L'application a été réalisée en Python avec Flask afin de réaliser la page web.
+                      <br><br>
+                      Ce cours m'a permis de découvrir les bases de l'intelligence artificielle, et de tester. J'ai pu me rendre compte 
+                      de l'importance du jeu de données de départ.
+                    </p>
+
+                  </div>
+                </div>
+              </section>
+            </div>
+
+
+            <li class="project-item active" data-filter-item data-category="jeux" data-modal="PAINTVR">
+              <div class="content-card" data-testimonials-item>
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/projets/paintvr/logo.png" alt="Logo de FakeNews" width="50" loading="lazy" data-testimonials-avatar>
+                </figure>
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Paint.Kinect</h4>
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Ce projet de Kinect m'a permis de comprendre son fonctionnement, j'ai pu comprendre comment fonctionne la
+                    détection de gestes et de partie du corps. Nous avons réalisé à 2, un paint, et on peut dessiner avec nos mains.
+                  </p>
+                </div>
+              </div>
+            </li>
+
+            <div class="modal-container" data-modal-container data-modal="PAINTVR">
+              <div class="overlay" data-overlay></div>
+              <section class="testimonials-modal">
+                <button class="modal-close-btn" data-modal-close-btn>
+                  <ion-icon name="close-outline"></ion-icon>
+                </button>
+                <div class="modal-img-wrapper">
+                  <figure class="modal-avatar-box">
+                    <img src="./assets/projets/paintvr/logo.png" alt="Logo de FakeNews" width="80" data-modal-img>
+                  </figure>
+                  <br>
+                  <li class="social-item">
+                    <a href="https://github.com/Hug0lvt" class="social-link">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                  </li>
+                </div>
+                <div class="modal-content">
+                  <h4 class="h3 modal-title" data-modal-title>Paint.Kinect</h4>
+                  <time datetime="2021-06-14">Projet de 3A - Semestre 5 (2023-2024)</time>
+                  <div data-modal-text>
+                    <p>
+                      Ce projet de Kinect m'a permis de comprendre son fonctionnement, j'ai pu comprendre comment fonctionne la
+                      détection de gestes et de partie du corps. Nous avons réalisé à 2, un paint, et on peut dessiner avec nos mains.
+                      <br><br>
+                      Une partie importante de ce projet a été aussi de définir les gestes, pour que ce soit agréable et pratique a utiliser.
                     </p>
 
                   </div>
@@ -684,11 +783,6 @@
     </div>
 
   </main>
-
-
-
-
-
 
   <!--
     - custom js link
